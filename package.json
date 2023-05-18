@@ -1,7 +1,7 @@
 {
   "name": "expressjs-typescript-sequelize",
-  "version": "1.0.0",
-  "description": "express integration with typescript closely integrated with sequelize with script to create migration in typescript",
+  "version": "1.0.2",
+  "description": "Expressjs typescript sequelize skelton application",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev nodemon --config nodemon-dev.json",
