@@ -1,5 +1,5 @@
 {
-  "name": "ts-express",
+  "name": "ts-express-sequelize",
   "version": "1.0.0",
   "description": "express integration with typescript closely integrated with sequelize with script to create migration in typescript",
   "main": "index.js",
@@ -10,6 +10,10 @@
     "prod-start": " cross-env NODE_ENV=prod node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "crt-mig": "ts-node src/createMigrations.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aryavijay/typescript-express-sequelize"
   },
   "author": "Vijay Kumar <vijayarya326@gmail.com",
   "license": "ISC",
