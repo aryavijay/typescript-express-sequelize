@@ -1,12 +1,12 @@
 {
-  "name": "ts-express-sequelize",
+  "name": "expressjs-typescript-sequelize",
   "version": "1.0.0",
   "description": "express integration with typescript closely integrated with sequelize with script to create migration in typescript",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev nodemon --config nodemon-dev.json",
     "build:prod": "npx tsc",
-    "build:dev": "npx tsc && cross-env NODE_ENV=prod nodemon --config nodemon-prod.json",
+    "build:dev": "npx tsc && cross-env NODE_ENV=dev nodemon --config nodemon-prod.json",
     "prod-start": " cross-env NODE_ENV=prod node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "crt-mig": "ts-node src/createMigrations.ts"

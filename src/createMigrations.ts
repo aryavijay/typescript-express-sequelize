@@ -72,7 +72,7 @@ module.exports = {
 const filepath = __dirname
 const d = new Date().getTime();
 const filename = d+"_"+argv.name+".ts"
-const migration_path = path.join(filepath, "/src/db/migrations/",filename);
+const migration_path = path.join(filepath, "../src/db/migrations/",filename);
 console.log(migration_path);
 let fileContent = ""
 switch(argv.template){
