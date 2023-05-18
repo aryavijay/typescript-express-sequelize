@@ -1,0 +1,32 @@
+{
+  "name": "ts-express",
+  "version": "1.0.0",
+  "description": "express integration with typescript closely integrated with sequelize with script to create migration in typescript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev nodemon --config nodemon-dev.json",
+    "build:prod": "npx tsc",
+    "build:dev": "npx tsc && cross-env NODE_ENV=prod nodemon --config nodemon-prod.json",
+    "prod-start": " cross-env NODE_ENV=prod node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "crt-mig": "ts-node src/createMigrations.ts"
+  },
+  "author": "Vijay Kumar <vijayarya326@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.1",
+    "sequelize": "^6.31.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.1.5",
+    "@types/yargs": "^17.0.24",
+    "typescript": "^5.0.4",
+    "yargs": "^17.7.2"
+  }
+}
